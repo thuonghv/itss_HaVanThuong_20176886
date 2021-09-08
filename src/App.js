@@ -1,27 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+//import CustomHook from"./customHook";
+import Friend from "./Friend";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h1>My react app</h1>
-        <h2>Thuonghv</h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const [number, setNumber] = useState(0);
 
+  const handleClick = () => {
+    setNumber(number + 1);
+  };
+ return(
+  <div className="App">
+  <Friend />
+  {}
+</div>
+);
+}
+ /*<CustomHook/>
+ )}*/
 export default App;
